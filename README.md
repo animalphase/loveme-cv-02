@@ -1,0 +1,1 @@
+repo of old http://loveme.computer website (my personal CV site). will redsign.
