@@ -1,0 +1,532 @@
+@charset "UTF-8";
+@import url("../fonts/SinkinSans/SinkinSans.css");
+
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+   Author's custom styles
+
+
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   ========================================================================== */
+
+
+
+
+
+
+
+/* ==========================================================================
+
+   Basic Text / typography / et cetera
+
+   ========================================================================== */
+
+
+body {
+    color: #949494;
+    font-family: Montserrat, "Helvetica Neue LT Std", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    /* line-height: 24px; */
+    /*letter-spacing: 0.075em;*/
+    text-rendering: optimizeLegibility;
+}
+
+
+a {
+    border-bottom: 2px solid;
+    color: #000;
+    /* display: inline-block; */
+    text-decoration: none;
+    transition: all 0.35s ease;
+}
+    a:hover {
+        /* color: #7ecbc0; */
+        /* color: #b07ca2; */
+        color: #e580ca;
+        transition: all 0.1s ease;
+    }
+    a:active {
+        transition: all 0s ease;
+    }
+
+
+h1 {
+    color: #414141;
+    font-size: 48px;
+    font-weight: 400;
+    /* letter-spacing: .1em; */
+    line-height: 1;
+    margin: 0;
+    padding: 1px 0 0 0;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 24px 0 27px 0;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 94px 0 24px 0;
+    text-transform: lowercase;
+}
+
+p {
+    margin: 24px 0;
+}
+
+#main-column {
+    max-width: 46em;
+    margin: 0 auto;
+    padding: 0 28px 96px 28px;
+}
+
+
+header {
+    margin: 96px 0 0 0;
+    padding: 0;
+    position: relative;
+}
+    header a {
+        text-transform: lowercase;
+    }
+    header ul {
+        list-style: none;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    header li {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    ul.external-links {
+        margin-top: 20px;
+        padding-bottom: 2px;
+    }
+        ul.external-links li {
+        }
+            ul.external-links li a, .external-link {
+                display: inline-block;
+                border: 1px solid;
+                border-radius: 200px;
+                color: #949494;
+                /* font-size: 12px; */
+                margin-right: 20px;
+                padding: 8px 20px 11px;
+            }
+            ul.external-links li a:hover, .external-link:hover {
+                -webkit-box-shadow: -2px 4px 0px 0px rgba(204,204,204,1);
+                -moz-box-shadow: -2px 4px 0px 0px rgba(204,204,204,1);
+                box-shadow: -2px 4px 0px 0px rgba(204,204,204,1);
+                color: #000;
+
+                transition: all 0.1s ease;
+                -moz-transform: translateY(-3px);
+                    -webkit-transform: translateY(-3px);
+                    -ms-transform: translateY(-3px);
+                    transform: translateY(-3px);
+            }
+            ul.external-links li a:active, .external-link:active {
+                -webkit-box-shadow: -1px 1px 0px 0px rgba(204,204,204,1);
+                -moz-box-shadow: -1px 1px 0px 0px rgba(204,204,204,1);
+                box-shadow: -1px 1px 0px 0px rgba(204,204,204,1);
+
+                text-shadow: 0px 1px 0px rgba(255,255,255,255), 0px 1px 1px rgba(210,210,210,40);
+                transition: all 0s ease;
+                -moz-transform: translateY(0px);
+                    -webkit-transform: translateY(0px);
+                    -ms-transform: translateY(0px);
+                    transform: translateY(0px);
+            }
+            ul.external-links li a .emoji, .external-link .emoji {
+                font-size: 1.2em; display: inline-block; position: relative; top: 2px;
+            }
+
+  header::after {
+    content: '';
+    display: block;
+    background: #ffdddd;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -168px;
+    width: 120px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a2f1cf+0,65e0c0+28,9fc8e0+56,f1d2ec+91 */
+    background: #a2f1cf; /* Old browsers */
+    background: -moz-linear-gradient(top,  #a2f1cf 0%, #65e0c0 28%, #9fc8e0 56%, #f1d2ec 91%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #a2f1cf 0%,#65e0c0 28%,#9fc8e0 56%,#f1d2ec 91%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #a2f1cf 0%,#65e0c0 28%,#9fc8e0 56%,#f1d2ec 91%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a2f1cf', endColorstr='#f1d2ec',GradientType=0 ); /* IE6-9 */
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+  }
+
+main {
+    width: 55%;
+}
+
+
+/* ==========================================================================
+
+   Unique Content Elements
+
+   ========================================================================== */
+
+
+
+.contact-me-link {
+    color: #e18098;
+    text-shadow: none;
+}
+
+.contact-me-link:hover {
+    background: #e18098;
+    color: #fff;
+    border-color: #e18098;
+}
+
+.contact-me-link:active {
+    text-shadow: none;
+}
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+
+
+/* ==========================================================================
+
+   Media Queries for screen size
+
+   ========================================================================== */
+
+
+@media only screen and (max-width: 46em) {
+    main {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 56em) {
+
+    ul.external-links li {
+        margin-bottom: 12px;
+    }
+    ul.contact-links li a {
+        margin-right: 48px;
+    }
+     ul.contact-links li:last-child a {
+        margin-right: 0;
+    }
+
+    header {
+      margin-top: 144px;
+      position: static;
+    }
+
+    header::after {
+      content: '';
+      display: block;
+      background: #ffdddd;
+      height: 48px;
+      position: absolute;
+      top: 0;
+      left: 0px;
+      width: 100%;
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a2f1cf+0,65e0c0+28,9fc8e0+56,f1d2ec+91 */
+      background: #a2f1cf; /* Old browsers */
+      background: -moz-linear-gradient(left, #a2f1cf 0%, #65e0c0 28%, #9fc8e0 56%, #f1d2ec 91%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(left, #a2f1cf 0%,#65e0c0 28%,#9fc8e0 56%,#f1d2ec 91%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to right, #a2f1cf 0%,#65e0c0 28%,#9fc8e0 56%,#f1d2ec 91%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a2f1cf', endColorstr='#f1d2ec',GradientType=1 ); /* IE6-9 */
+      border-radius: 0;
+    }
+}
+
+
+
+
+
+
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
