@@ -143,7 +143,8 @@ a {
     a:hover {
         /* color: #7ecbc0; */
         /* color: #b07ca2; */
-        color: #e580ca;
+        /* color: #e580ca; */
+        color: #e18098;
         transition: all 0.1s ease;
     }
     a:active {
@@ -217,15 +218,16 @@ header {
                 display: inline-block;
                 border: 1px solid;
                 border-radius: 200px;
+                border-radius: 2px;
                 color: #949494;
                 /* font-size: 12px; */
                 margin-right: 20px;
                 padding: 8px 20px 11px;
             }
             ul.external-links li a:hover, .external-link:hover {
-                -webkit-box-shadow: -2px 4px 0px 0px rgba(204,204,204,1);
-                -moz-box-shadow: -2px 4px 0px 0px rgba(204,204,204,1);
-                box-shadow: -2px 4px 0px 0px rgba(204,204,204,1);
+                -webkit-box-shadow: -3px 4px 0px 0px rgba(204,204,204,1);
+                -moz-box-shadow: -3px 4px 0px 0px rgba(204,204,204,1);
+                box-shadow: -3px 4px 0px 0px rgba(204,204,204,1);
                 color: #000;
 
                 transition: all 0.1s ease;
@@ -235,6 +237,7 @@ header {
                     transform: translateY(-3px);
             }
             ul.external-links li a:active, .external-link:active {
+              background: #ebebeb;
                 -webkit-box-shadow: -1px 1px 0px 0px rgba(204,204,204,1);
                 -moz-box-shadow: -1px 1px 0px 0px rgba(204,204,204,1);
                 box-shadow: -1px 1px 0px 0px rgba(204,204,204,1);
@@ -265,8 +268,8 @@ header {
     background: -webkit-linear-gradient(top,  #a2f1cf 0%,#65e0c0 28%,#9fc8e0 56%,#f1d2ec 91%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom,  #a2f1cf 0%,#65e0c0 28%,#9fc8e0 56%,#f1d2ec 91%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a2f1cf', endColorstr='#f1d2ec',GradientType=0 ); /* IE6-9 */
-    border-bottom-left-radius: 40px;
-    border-top-right-radius: 40px;
+    /* border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px; */
   }
 
 main {
